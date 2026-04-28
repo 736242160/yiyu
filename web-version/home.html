@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>首页 - 医语小助手</title>
+    <link rel="stylesheet" href="css/common.css?v=2026042801">
+    <link rel="stylesheet" href="css/home.css?v=2026042801">
+</head>
+<body>
+    <div class="container">
+        <div class="home-page-header">
+            <div class="search-box">
+                <input type="text" class="search-input" id="searchInput" placeholder="输入实验关键词">
+                <img class="search-icon" src="images/search.png" alt="搜索" onclick="onSearch()">
+            </div>
+        </div>
+        <div class="home-page-container" id="experimentList">
+        </div>
+        <div id="finalMessage" class="final" style="display: none;">到底了</div>
+        <div id="backToTop" class="back-to-top" style="display: none;" onclick="scrollToTop()">
+            <span>↑</span>
+        </div>
+    </div>
+    <div class="tab-bar">
+        <div class="tab-item active" onclick="switchTab('home')">
+            <img src="images/tabBar/home.png" alt="首页">
+        </div>
+        <div class="tab-item" onclick="switchTab('usercenter')">
+            <img src="images/tabBar/user.png" alt="用户中心">
+        </div>
+    </div>
+    <script src="js/utils.js?v=2026042801"></script>
+    <script src="js/http.js?v=2026042801"></script>
+    <script src="js/home.js?v=2026042801"></script>
+</body>
+</html>

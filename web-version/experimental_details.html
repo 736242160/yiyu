@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>实验详情 - 医语小助手</title>
+    <link rel="stylesheet" href="css/common.css?v=2026042801">
+    <link rel="stylesheet" href="css/experimental_details.css?v=2026042801">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="back-btn" onclick="goBack()">
+                <span>←</span>
+            </div>
+            <div class="header-title">实验详情</div>
+        </div>
+        <div class="content">
+            <div class="experiment-image">
+                <img id="experimentImage" src="" alt="实验图片">
+            </div>
+            <div class="experiment-info">
+                <div class="experiment-title" id="experimentTitle">实验名称</div>
+                <div class="experiment-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">参与人数</span>
+                        <span class="stat-value" id="experimentNum">0</span>
+                    </div>
+                </div>
+                <div class="experiment-description" id="experimentDescription">
+                    实验描述
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="btn btn-primary" onclick="startExperiment()">开始实验</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/utils.js?v=2026042801"></script>
+    <script src="js/http.js?v=2026042801"></script>
+    <script src="js/experimental_details.js?v=2026042801"></script>
+</body>
+</html>

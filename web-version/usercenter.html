@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>用户中心 - 医语小助手</title>
+    <link rel="stylesheet" href="css/common.css?v=2026042801">
+    <link rel="stylesheet" href="css/usercenter.css?v=2026042801">
+</head>
+<body>
+    <div class="container">
+        <div class="content-top">
+            <div class="user-card" id="userCard" onclick="gotoUserEditPage()">
+                <div class="user-avatar fallback">
+                    <span id="userAvatarText">医</span>
+                </div>
+                <div class="user-info">
+                    <div class="user-name" id="userName">用户名</div>
+                    <div class="user-detail" id="userDetail">用户详情</div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="my_report">
+                <div class="title">我的报告</div>
+                <div class="search-box">
+                    <input type="text" class="search-input" id="searchInput" placeholder="输入实验关键词">
+                    <img class="search-icon" src="images/search.png" alt="搜索" onclick="onSearch()">
+                </div>
+            </div>
+            <div id="reportList">
+            </div>
+            <div id="finalMessage" class="footer__version" style="display: none;">到底了</div>
+        </div>
+    </div>
+    <div class="tab-bar">
+        <div class="tab-item" onclick="switchTab('home')">
+            <img src="images/tabBar/home.png" alt="首页">
+        </div>
+        <div class="tab-item active" onclick="switchTab('usercenter')">
+            <img src="images/tabBar/user.png" alt="用户中心">
+        </div>
+    </div>
+    <script src="js/utils.js?v=2026042801"></script>
+    <script src="js/http.js?v=2026042801"></script>
+    <script src="js/usercenter.js?v=2026042801"></script>
+</body>
+</html>

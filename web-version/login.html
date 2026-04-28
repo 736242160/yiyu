@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>登录 - 医语小助手</title>
+    <link rel="stylesheet" href="css/common.css?v=2026042801">
+    <link rel="stylesheet" href="css/login.css?v=2026042801">
+</head>
+<body>
+    <div class="container">
+        <div class="title">医语</div>
+        <form id="loginForm">
+            <div class="input-group">
+                <div class="icon">
+                    <img src="images/account.png" alt="用户名" />
+                </div>
+                <input type="text" class="input-field" name="login" placeholder="请输入用户名" required>
+            </div>
+            <div class="input-group">
+                <div class="icon">
+                    <img src="images/password.png" alt="密码" />
+                </div>
+                <input type="password" class="input-field" name="password" placeholder="请输入密码" required>
+            </div>
+            <button type="submit" class="login-btn">登录</button>
+        </form>
+        <div class="links">
+            <span>没有账号？</span>
+            <span class="link-btn" onclick="goToRegister()">去注册</span>
+        </div>
+        <div class="links">
+            <span>修改密码？</span>
+            <span class="link-btn" onclick="goToModifyPassword()">去修改密码</span>
+        </div>
+    </div>
+    <script src="js/utils.js?v=2026042801"></script>
+    <script src="js/http.js?v=2026042801"></script>
+    <script src="js/login.js?v=2026042801"></script>
+</body>
+</html>
