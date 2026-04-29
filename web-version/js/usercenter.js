@@ -7,9 +7,9 @@ let isRefreshing = false;
 
 // 写死：模拟用户信息
 const mockUserInfo = {
-    name: '张三',
+    name: '用户26054',
     avatar: '',
-    birthday: '1990-01-15',
+    birthday: '',
     degree: '本科'
 };
 
