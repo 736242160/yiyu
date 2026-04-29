@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>实验详情 - 见微知心</title>
+    <link rel="stylesheet" href="css/common.css?v=2026042901">
+    <link rel="stylesheet" href="css/experimental_details.css?v=2026042901">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="back-btn" onclick="goBack()">
+                <span>←</span>
+            </div>
+            <div class="header-title">实验详情</div>
+            <div class="header-right"></div>
+        </div>
+        <div class="content">
+            <div class="experiment-image">
+                <img id="experimentImage" src="" alt="实验图片">
+            </div>
+            <div class="experiment-info">
+                <h1 id="experimentName">实验名称</h1>
+                <p id="experimentDescription">实验描述</p>
+                <div class="experiment-stats">
+                    <span id="experimentParticipants">参与人数：0</span>
+                </div>
+            </div>
+            <div class="experiment-content">
+                <h2>实验介绍</h2>
+                <p id="experimentIntroduction">实验介绍内容</p>
+            </div>
+            <div class="experiment-content">
+                <h2>实验流程</h2>
+                <p id="experimentProcess">实验流程内容</p>
+            </div>
+            <div class="experiment-content">
+                <h2>注意事项</h2>
+                <p id="experimentNotes">注意事项内容</p>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="btn btn-primary" onclick="startExperiment()">开始实验</button>
+        </div>
+    </div>
+    <script src="js/utils.js?v=2026042901"></script>
+    <script src="js/http.js?v=2026042901"></script>
+    <script src="js/experimental_details.js?v=2026042901"></script>
+</body>
+</html>
