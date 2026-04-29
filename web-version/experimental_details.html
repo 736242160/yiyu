@@ -6,7 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>实验详情 - 医语小助手</title>
+    <title>实验详情 - 见微知心</title>
     <link rel="stylesheet" href="css/common.css?v=2026042801">
     <link rel="stylesheet" href="css/experimental_details.css?v=2026042801">
 </head>
@@ -17,26 +17,34 @@
                 <span>←</span>
             </div>
             <div class="header-title">实验详情</div>
+            <div class="header-right"></div>
         </div>
         <div class="content">
             <div class="experiment-image">
                 <img id="experimentImage" src="" alt="实验图片">
             </div>
             <div class="experiment-info">
-                <div class="experiment-title" id="experimentTitle">实验名称</div>
+                <h1 id="experimentName">实验名称</h1>
+                <p id="experimentDescription">实验描述</p>
                 <div class="experiment-stats">
-                    <div class="stat-item">
-                        <span class="stat-label">参与人数</span>
-                        <span class="stat-value" id="experimentNum">0</span>
-                    </div>
-                </div>
-                <div class="experiment-description" id="experimentDescription">
-                    实验描述
+                    <span id="experimentParticipants">参与人数：0</span>
                 </div>
             </div>
-            <div class="action-buttons">
-                <button class="btn btn-primary" onclick="startExperiment()">开始实验</button>
+            <div class="experiment-content">
+                <h2>实验介绍</h2>
+                <p id="experimentIntroduction">实验介绍内容</p>
             </div>
+            <div class="experiment-content">
+                <h2>实验流程</h2>
+                <p id="experimentProcess">实验流程内容</p>
+            </div>
+            <div class="experiment-content">
+                <h2>注意事项</h2>
+                <p id="experimentNotes">注意事项内容</p>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="btn btn-primary" onclick="startExperiment()">开始实验</button>
         </div>
     </div>
     <script src="js/utils.js?v=2026042801"></script>

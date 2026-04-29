@@ -6,7 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>用户中心 - 医语小助手</title>
+    <title>用户中心 - 见微知心</title>
     <link rel="stylesheet" href="css/common.css?v=2026042801">
     <link rel="stylesheet" href="css/usercenter.css?v=2026042801">
 </head>
@@ -15,7 +15,7 @@
         <div class="content-top">
             <div class="user-card" id="userCard" onclick="gotoUserEditPage()">
                 <div class="user-avatar fallback">
-                    <span id="userAvatarText">医</span>
+                    <span id="userAvatarText">见</span>
                 </div>
                 <div class="user-info">
                     <div class="user-name" id="userName">用户名</div>
@@ -24,16 +24,37 @@
             </div>
         </div>
         <div class="content-wrapper">
-            <div class="my_report">
-                <div class="title">我的报告</div>
-                <div class="search-box">
-                    <input type="text" class="search-input" id="searchInput" placeholder="输入实验关键词">
-                    <img class="search-icon" src="images/search.png" alt="搜索" onclick="onSearch()">
+            <div class="menu-list">
+                <div class="menu-item" onclick="gotoMyExperiments()">
+                    <div class="menu-icon">
+                        <img src="images/menu/experiment.png" alt="我的实验">
+                    </div>
+                    <div class="menu-text">我的实验</div>
+                    <img class="menu-arrow" src="images/arrow.png" alt="箭头">
+                </div>
+                <div class="menu-item" onclick="gotoHistory()">
+                    <div class="menu-icon">
+                        <img src="images/menu/history.png" alt="历史记录">
+                    </div>
+                    <div class="menu-text">历史记录</div>
+                    <img class="menu-arrow" src="images/arrow.png" alt="箭头">
+                </div>
+                <div class="menu-item" onclick="gotoSettings()">
+                    <div class="menu-icon">
+                        <img src="images/menu/settings.png" alt="设置">
+                    </div>
+                    <div class="menu-text">设置</div>
+                    <img class="menu-arrow" src="images/arrow.png" alt="箭头">
+                </div>
+                <div class="menu-item" onclick="gotoAbout()">
+                    <div class="menu-icon">
+                        <img src="images/menu/about.png" alt="关于我们">
+                    </div>
+                    <div class="menu-text">关于我们</div>
+                    <img class="menu-arrow" src="images/arrow.png" alt="箭头">
                 </div>
             </div>
-            <div id="reportList">
-            </div>
-            <div id="finalMessage" class="footer__version" style="display: none;">到底了</div>
+            <div class="logout-btn" onclick="doLogout()">退出登录</div>
         </div>
     </div>
     <div class="tab-bar">
