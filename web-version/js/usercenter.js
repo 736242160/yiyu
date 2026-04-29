@@ -9,8 +9,8 @@ let isRefreshing = false;
 const mockUserInfo = {
     name: '用户26054',
     avatar: '',
-    birthday: '',
-    degree: '本科'
+    birthday: '未填写',
+    degree: '未填写'
 };
 
 // 写死：模拟实验记录数据
@@ -73,8 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function loadUserInfo() {
-    // 写死：使用模拟用户信息
-    userInfo = mockUserInfo;
+    // 从本地存储读取用户名，如果没有则使用默认值
+    const savedUserName = getStorageSync('userName');
+    userInfo = {
+        ...mockUserInfo,
+        name: savedUserName || mockUserInfo.name
+    };
     renderUserInfo();
 }
 

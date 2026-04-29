@@ -18,6 +18,8 @@ function doLogin(event) {
     }
 
     // 写死：直接登录成功，不需要验证
+    // 存储用户名到本地存储
+    setStorageSync('userName', login);
     showToast('登录成功');
     setTimeout(() => {
         redirectTo('home.html');
